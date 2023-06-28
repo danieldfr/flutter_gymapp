@@ -57,7 +57,7 @@ class _AutenticacaoTelaState extends State<AutenticacaoTela> {
                       ),
                       const SizedBox(height: 32),
                       TextFormField(
-                        decoration: getAuthenticationInputDecoration("E-mail"),
+                        decoration: getAuthenticationInputDecoration("Digite seu e-mail"),
                         validator: (String? value) {
                           if (value == null) {
                             return "O e-mail não pode ser vazio.";
@@ -73,7 +73,7 @@ class _AutenticacaoTelaState extends State<AutenticacaoTela> {
                       ),
                       const SizedBox(height: 8),
                       TextFormField(
-                        decoration: getAuthenticationInputDecoration("Senha"),
+                        decoration: getAuthenticationInputDecoration("Digite sua senha"),
                         obscureText: true,
                         validator: (String? value) {
                           if (value == null) {
@@ -92,7 +92,7 @@ class _AutenticacaoTelaState extends State<AutenticacaoTela> {
                           children: [
                             TextFormField(
                               decoration: getAuthenticationInputDecoration(
-                                  "Confirme a senha"),
+                                  "Confirme sua senha"),
                               obscureText: true,
                               validator: (String? value) {
                                 if (value == null) {
@@ -107,7 +107,7 @@ class _AutenticacaoTelaState extends State<AutenticacaoTela> {
                             const SizedBox(height: 8),
                             TextFormField(
                               decoration:
-                                  getAuthenticationInputDecoration("Nome"),
+                                  getAuthenticationInputDecoration("Digite seu nome"),
                               validator: (String? value) {
                                 if (value == null) {
                                   return "O nome não pode ser vazio.";
